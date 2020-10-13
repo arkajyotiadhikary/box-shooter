@@ -4,7 +4,7 @@ public class plyer_look : MonoBehaviour
 {
     // Floats
     public float mouseSense;
-    public float lookDown, lookUp;
+    public float lookUp, lookDown;
     
     // Transforms
     public Transform look;
