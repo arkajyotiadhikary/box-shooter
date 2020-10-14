@@ -8,6 +8,8 @@ public class plyer_look : MonoBehaviour
     
     // Transforms
     public Transform look;
+    public Transform right_hand;
+    public Transform camera;
 
     // Vector3
     Vector3 currentLook;
@@ -33,5 +35,6 @@ public class plyer_look : MonoBehaviour
 
         this.transform.rotation = Quaternion.Euler(0, lookAngle.y, 0);
         look.rotation = Quaternion.Euler(lookAngle.x, lookAngle.y, 0);
+        right_hand.forward = camera.forward;
     }
 }
