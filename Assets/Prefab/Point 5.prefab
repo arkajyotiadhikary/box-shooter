@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8065116771658140313}
   - component: {fileID: 2138910369046891909}
   - component: {fileID: 8538224107904401282}
+  - component: {fileID: -4001550465404932259}
   m_Layer: 0
   m_Name: Point 5
   m_TagString: Untagged
@@ -125,6 +126,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxUpwardForce: 20
+--- !u!114 &-4001550465404932259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6625274290744288663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0906cf74f53513e4ba67d17ad4f75923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyPartical: {fileID: 6455515679224692373}
 --- !u!1 &8653478625632711498
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,9 +185,9 @@ ParticleSystem:
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
+  looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
