@@ -13,7 +13,10 @@ public class Bullet : MonoBehaviour
         private void Start() {
             rb = GetComponent<Rigidbody>();
             rb.AddForce(transform.forward*bulletSpeed,ForceMode.Impulse);
+        }
 
+        private void Update() {
+            
             if(time >= bulletDestroyTime)
             {
                 Destroy(gameObject);
