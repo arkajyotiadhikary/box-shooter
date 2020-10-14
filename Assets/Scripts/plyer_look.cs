@@ -21,7 +21,7 @@ public class plyer_look : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         currentLook = new Vector3(Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0);
 
